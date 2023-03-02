@@ -1,0 +1,51 @@
+{
+  "name": "sim-forge",
+  "productName": "sim-forge",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": ".webpack/main",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "eslint --ext .ts,.tsx ."
+  },
+  "keywords": [],
+  "author": {
+    "name": "liaojiawei",
+    "email": "2547456640@qq.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.5",
+    "@electron-forge/maker-deb": "^6.0.5",
+    "@electron-forge/maker-rpm": "^6.0.5",
+    "@electron-forge/maker-squirrel": "^6.0.5",
+    "@electron-forge/maker-zip": "^6.0.5",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.0.5",
+    "@electron-forge/plugin-webpack": "^6.0.5",
+    "@types/ffi-napi": "^4.0.7",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "@vercel/webpack-asset-relocator-loader": "^1.7.3",
+    "css-loader": "^6.7.3",
+    "electron": "^20.2.0",
+    "eslint": "^8.35.0",
+    "eslint-plugin-import": "^2.27.5",
+    "fork-ts-checker-webpack-plugin": "^7.3.0",
+    "node-gyp": "^9.3.1",
+    "node-loader": "^2.0.0",
+    "prisma": "^4.11.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "~4.5.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "ffi-napi": "^4.0.3",
+    "node-addon-api": "^6.0.0"
+  }
+}
