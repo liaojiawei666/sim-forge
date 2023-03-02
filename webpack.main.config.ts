@@ -9,9 +9,7 @@ export const mainConfig: Configuration = {
    */
   entry: './src/index.ts',
   // Put your normal webpack config below here
-  externals: {
-    "ffi-napi": "ffi-napi"
-  },
+
   module: {
     rules,
   },

@@ -1,14 +1,19 @@
 import {ipcMain} from "electron";
 // import ffi from "ffi-napi"
 import path from "path";
+// const p=path.resolve(__dirname,"../../assets/fiber.node")
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-import ffi from "ffi-napi"
-const adPath = path.resolve(__dirname, "../../assets/addDll.dll");
-console.log(adPath)
-const addDll = ffi.Library(adPath, {
-  "add": ["int", ["int", "int"]]
-})
-console.log(addDll.add(1, 2))
+const fiber = require("fiber")
+
+console.log(fiber.open(0))
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+// import ffi from "ffi-napi"
+// const adPath = path.join(__dirname, "../../assets/addDll.dll");
+// console.log(adPath)
+// const addDll = ffi.Library(adPath, {
+//   "add": ["int", ["int", "int"]]
+// })
+// console.log(addDll.add(1, 2))
 // const fiberpath=path.resolve(__dirname,"../../assets/Fiber2125API.dll")
 // let fiberDll: any = undefined;
 // try {
