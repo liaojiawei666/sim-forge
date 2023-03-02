@@ -24,16 +24,7 @@ console.log(fiber.open(0))
 //   console.error(e);
 //   fiberDll = undefined;
 // }
-// ipcMain.handle("openFiber", () => {
-//   if (fiberDll === undefined) {
-//     return "加载动态库失败！"
-//   } else {
-//     try {
-//       const open = fiberDll.FIB2125_Open(0);
-//       if (open === 0) return "测试成功！"
-//     } catch (e) {
-//       return "打开失败"
-//     }
-//   }
-//   return '未知错误';
-// })
+ipcMain.handle("openFiber", () => {
+  if(fiber.open(0)===0) return "打开光纤成功！"
+  return '未知错误';
+})

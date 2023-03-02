@@ -12,9 +12,7 @@ import * as path from "path";
 
 const config: ForgeConfig = {
   packagerConfig: {
-    asar: {
-      unpack:"**\\*.{node,dll}"
-    },
+    // asar: true,
     extraResource: [
       "./node_modules/.prisma",
       "./prisma/simulation.db",
@@ -52,10 +50,10 @@ const config: ForgeConfig = {
         ],
       },
     }),
-    {
-      name: '@electron-forge/plugin-auto-unpack-natives',
-      config: {}
-    }
+    // {
+    //   name: '@electron-forge/plugin-auto-unpack-natives',
+    //   config: {}
+    // }
   ],
 };
 
